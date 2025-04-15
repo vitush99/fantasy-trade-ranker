@@ -1,0 +1,1 @@
+# fantasy-trade-ranker
