@@ -9,6 +9,7 @@
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@constants/*": ["constants/*"],
+      "@config/*": ["firebaseConfig.ts"],
       "@hooks/*": ["hooks/*"]
     }
   },
