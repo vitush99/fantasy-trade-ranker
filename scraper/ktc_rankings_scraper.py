@@ -1,16 +1,23 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
-import time, re
-import os
-import glob
+import time, re, os, glob
 
-os.environ["WDM_BROWSER_PATH"] = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# ✅ Set path for Chrome in Docker
+chrome_path = "/opt/chrome/chrome"
+os.environ["WDM_BROWSER_PATH"] = chrome_path
 
-options = webdriver.ChromeOptions()
-options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-options.add_argument("--headless")
+# ✅ Set Chrome options
+options = Options()
+options.binary_location = chrome_path
+options.add_argument("--headless=new")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+
+# ✅ Init driver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 def scrape_rankings_all_pages(format_id: int):
     all_players = []

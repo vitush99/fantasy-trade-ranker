@@ -10,34 +10,32 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
-import { getPersonalizedRankings } from '@/ranking_engine';
+import { getPersonalizedRankings } from '@engine';
+import { fetchRankings } from '@/data/dataLoader';
+import type { Player } from '@engine';
+
+
 
 export default function RankingsScreen() {
   const [format, setFormat] = useState<'sf' | '1qb'>('sf');
   const [showPersonal, setShowPersonal] = useState(false);
   const [baseRankings, setBaseRankings] = useState([]);
-  const [personalizedRankings, setPersonalizedRankings] = useState([]);
-
-  const getPublicUrl = (filename: string) =>
-    `https://storage.googleapis.com/fantasy-trade-ranker/ktc_data/${filename}`;
+  const [personalizedRankings, setPersonalizedRankings] = useState<Player[]>([]);
 
   const loadRankings = async () => {
     try {
-      const filename = format === 'sf' ? 'ktc_rankings_sf.json' : 'ktc_rankings_1qb.json';
-      const url = getPublicUrl(filename);
-      const response = await fetch(url);
-      const base = await response.json();
-
+      const base = await fetchRankings(format); 
+  
       const swipeData = await AsyncStorage.getItem('@swipe_history');
       const swipes = swipeData ? JSON.parse(swipeData) : [];
-
+  
       setBaseRankings(base);
       const personal = getPersonalizedRankings(base, swipes);
       setPersonalizedRankings(personal);
     } catch (err) {
       console.error('🔥 Error loading rankings:', err);
     }
-  };
+  };  
 
   useEffect(() => {
     loadRankings();
@@ -102,7 +100,7 @@ export default function RankingsScreen() {
               </Text>
               <Text style={styles.subtext}>
                 Age: {item.age} | Value:{' '}
-                {showPersonal ? Math.round(item.adjustedValue) : item.value}
+                {showPersonal ? Math.round(item.adjustedValue ?? item.value): item.value}
               </Text>
             </View>
           );
@@ -113,13 +111,13 @@ export default function RankingsScreen() {
 }
 
 const getChangeStyle = (originalRank: number, newRank: number) => {
-  if (originalRank > newRank) return { color: 'lightgreen' };
-  if (originalRank < newRank) return { color: 'salmon' };
-  return { color: 'gray' };
+  if (originalRank > newRank) return { color: '#2e7d32' }; // green
+  if (originalRank < newRank) return { color: '#d32f2f' }; // red
+  return { color: '#777' }; // neutral
 };
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#111' },
+  container: { flex: 1, backgroundColor: '#fff' },
   toggleContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -130,25 +128,31 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: '#888',
+    borderColor: '#ccc',
+    backgroundColor: '#f0f0f0',
   },
   active: {
-    backgroundColor: '#444',
+    backgroundColor: '#dbeafe',
+    borderColor: '#60a5fa',
   },
   toggleText: {
-    color: '#fff',
+    color: '#222',
+    fontWeight: '500',
   },
   item: {
     padding: 12,
     borderBottomWidth: 1,
-    borderBottomColor: '#333',
+    borderBottomColor: '#eee',
+    backgroundColor: '#fdfdfd',
   },
   name: {
-    color: '#fff',
+    color: '#111',
     fontSize: 16,
+    fontWeight: '500',
   },
   subtext: {
-    color: '#aaa',
+    color: '#555',
     fontSize: 12,
+    marginTop: 4,
   },
 });

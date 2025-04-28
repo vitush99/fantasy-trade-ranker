@@ -5,12 +5,16 @@ from bs4 import BeautifulSoup
 import time, re, os, datetime
 import glob
 
-os.environ["WDM_BROWSER_PATH"] = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+# ✅ Docker-compatible Chrome binary path
+os.environ["WDM_BROWSER_PATH"] = "/usr/bin/google-chrome"
 
-# Setup Chrome options
+# ✅ Headless Chrome for Docker
 options = webdriver.ChromeOptions()
-options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+options.binary_location = "/usr/bin/google-chrome"
 options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+
 
 def get_trades_data():
     install_base = ChromeDriverManager().install()

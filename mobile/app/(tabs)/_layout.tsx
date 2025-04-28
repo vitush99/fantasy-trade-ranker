@@ -10,38 +10,24 @@ import { HapticTab } from '@components/HapticTab';
 import { IconSymbol } from '@components/ui/IconSymbol';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            position: 'absolute',
-            borderTopWidth: 0,
-            backgroundColor: 'transparent',
-          },
-          android: {
-            backgroundColor: 'black',
-          },
-        }),
+        tabBarStyle: {
+          backgroundColor: '#fff',
+          borderTopWidth: 1,
+          borderTopColor: '#ccc',
+        },
+        tabBarActiveTintColor: '#007aff', // iOS blue
+        tabBarInactiveTintColor: '#888',
+        tabBarLabelStyle: {
+          fontSize: 12,
+        },
       }}
     >
       <Tabs.Screen
         name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => (
-            <Ionicons name="home-outline" size={22} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="swipe"
         options={{
           title: 'Swipe',
           tabBarIcon: ({ color }) => (

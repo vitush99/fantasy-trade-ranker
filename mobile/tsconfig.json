@@ -3,13 +3,13 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["app/*"],
       "@screen/*": ["app/screen/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@constants/*": ["constants/*"],
-      "@config/*": ["firebaseConfig.ts"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@engine": ["ranking_engine.ts"]
     }
   },
   "include": [

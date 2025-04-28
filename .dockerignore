@@ -1,0 +1,21 @@
+# 🌐 Sensitive config
+#gcs-creds.json
+.env
+
+# 🐍 Python
+__pycache__/
+*.pyc
+
+# 🛠 Build/virtual env
+venv/
+*.egg-info/
+
+# 📦 Node / Expo (if relevant to mobile subdir)
+node_modules/
+mobile/node_modules/
+mobile/.expo/
+
+# 💾 OS / Editor
+.DS_Store
+.idea/
+.vscode/
