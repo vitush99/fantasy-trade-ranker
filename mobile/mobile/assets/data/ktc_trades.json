@@ -1,0 +1,985 @@
+[
+  {
+    "date": "Today",
+    "sideA": [
+      "Geno Smith",
+      "2026 Round 2",
+      "Sam Howell",
+      "2025 Pick 2.12",
+      "2025 Pick 1.01"
+    ],
+    "sideB": [
+      "Drake Maye",
+      "2026 Round 1",
+      "Jerry Jeudy",
+      "Rachaad White"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Aaron Jones"
+    ],
+    "sideB": [
+      "2026 Round 2"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": "Tiered"
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Chuba Hubbard",
+      "2025 Pick 2.04"
+    ],
+    "sideB": [
+      "Marvin Mims",
+      "2025 Pick 1.06"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 9,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Jauan Jennings",
+      "2025 Pick 2.04"
+    ],
+    "sideB": [
+      "Tyreek Hill",
+      "Deebo Samuel",
+      "2027 Round 3",
+      "2025 Pick 4.10"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 10,
+      "start": 11,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "DK Metcalf",
+      "Derrick Henry"
+    ],
+    "sideB": [
+      "Josh Downs",
+      "2026 Round 2",
+      "2025 Pick 3.08"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": "Tiered"
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2025 Pick 2.03"
+    ],
+    "sideB": [
+      "Tyrone Tracy"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": "Tiered"
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Mike Evans"
+    ],
+    "sideB": [
+      "2025 Pick 2.08",
+      "2025 Pick 2.11"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": "Tiered"
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "James Conner",
+      "2026 Round 3",
+      "2025 Pick 1.05"
+    ],
+    "sideB": [
+      "2026 Round 4",
+      "2025 Pick 1.03",
+      "2025 Pick 2.03"
+    ],
+    "settings": {
+      "qb": "1QB",
+      "te": "none",
+      "teams": 10,
+      "start": 8,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Justin Herbert",
+      "Chris Olave",
+      "2026 Round 2",
+      "Brenton Strange"
+    ],
+    "sideB": [
+      "Amon-Ra St. Brown",
+      "Brock Purdy",
+      "Jordan Mason"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": "Tiered"
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2027 Round 1",
+      "Jerry Jeudy",
+      "Joe Flacco",
+      "2025 Pick 1.06",
+      "2025 Pick 1.08"
+    ],
+    "sideB": [
+      "Rome Odunze",
+      "2025 Pick 1.04",
+      "2025 Pick 2.04",
+      "2025 Pick 3.08"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 10,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2026 Round 1",
+      "2027 Round 1"
+    ],
+    "sideB": [
+      "James Cook"
+    ],
+    "settings": {
+      "qb": "1QB",
+      "te": "TE+",
+      "teams": 16,
+      "start": 7,
+      "passTD": 3.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Jordan Love",
+      "Evan Engram",
+      "2025 Pick 3.09",
+      "2025 Pick 1.12"
+    ],
+    "sideB": [
+      "Brock Bowers"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 11,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Brock Bowers",
+      "2025 Pick 1.03"
+    ],
+    "sideB": [
+      "Drake Maye",
+      "Nico Collins",
+      "Trey Benson"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 10,
+      "start": 9,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Trevor Lawrence",
+      "2026 Round 3"
+    ],
+    "sideB": [
+      "2026 Round 4",
+      "2025 Pick 1.09",
+      "2025 Pick 3.05"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 9,
+      "passTD": 4.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Christian McCaffrey",
+      "T.J. Hockenson"
+    ],
+    "sideB": [
+      "Trey McBride"
+    ],
+    "settings": {
+      "qb": "1QB",
+      "te": "none",
+      "teams": 12,
+      "start": 9,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2025 Pick 1.12"
+    ],
+    "sideB": [
+      "Josh Jacobs"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 14,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2025 Pick 3.08"
+    ],
+    "sideB": [
+      "Derek Carr"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 14,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Josh Downs",
+      "Rashod Bateman"
+    ],
+    "sideB": [
+      "Chris Godwin"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 12,
+      "start": 11,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2025 Pick 2.09"
+    ],
+    "sideB": [
+      "T.J. Hockenson"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Caleb Williams",
+      "2025 Pick 1.01",
+      "2025 Pick 1.09"
+    ],
+    "sideB": [
+      "De'Von Achane",
+      "2026 Round 1",
+      "2025 Pick 1.14"
+    ],
+    "settings": {
+      "qb": "1QB",
+      "te": "none",
+      "teams": 14,
+      "start": 7,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Justin Herbert",
+      "2025 Pick 1.05",
+      "2025 Pick 3.05"
+    ],
+    "sideB": [
+      "Josh Jacobs",
+      "2027 Round 1"
+    ],
+    "settings": {
+      "qb": "1QB",
+      "te": "none",
+      "teams": 14,
+      "start": 7,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Joe Burrow",
+      "2025 Pick 1.12"
+    ],
+    "sideB": [
+      "Saquon Barkley",
+      "2027 Round 1",
+      "Justin Fields",
+      "2026 Round 2",
+      "Russell Wilson"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 0.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Jauan Jennings",
+      "2026 Round 2",
+      "Brenton Strange"
+    ],
+    "sideB": [
+      "Dalton Kincaid",
+      "2027 Round 2",
+      "Javon Baker"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 9,
+      "passTD": 4.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2026 Round 1",
+      "2025 Pick 2.12",
+      "2025 Pick 2.01",
+      "2025 Pick 2.10"
+    ],
+    "sideB": [
+      "2025 Pick 2.09",
+      "2025 Pick 1.01"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Evan Engram"
+    ],
+    "sideB": [
+      "Pat Freiermuth",
+      "2025 Pick 3.02"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2026 Round 2",
+      "2025 Pick 1.06",
+      "2025 Pick 2.06"
+    ],
+    "sideB": [
+      "2025 Pick 1.03",
+      "2025 Pick 4.03"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 14,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Josh Allen"
+    ],
+    "sideB": [
+      "Patrick Mahomes",
+      "2025 Pick 1.09"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 14,
+      "start": 11,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2026 Round 2",
+      "Roschon Johnson",
+      "2025 Pick 1.02"
+    ],
+    "sideB": [
+      "C.J. Stroud",
+      "2025 Pick 3.12"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Brian Robinson"
+    ],
+    "sideB": [
+      "James Conner"
+    ],
+    "settings": {
+      "qb": "1QB",
+      "te": "none",
+      "teams": 10,
+      "start": 11,
+      "passTD": 4.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Marvin Harrison Jr.",
+      "2025 Pick 1.08"
+    ],
+    "sideB": [
+      "2026 Round 1",
+      "2025 Pick 1.03",
+      "2025 Pick 3.03"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 8,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": "Tiered"
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Breece Hall",
+      "Chase Brown"
+    ],
+    "sideB": [
+      "Jaxon Smith-Njigba",
+      "Michael Pittman"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 8,
+      "start": 8,
+      "passTD": 4.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Ladd McConkey",
+      "James Conner"
+    ],
+    "sideB": [
+      "De'Von Achane",
+      "2025 Pick 2.01",
+      "2025 Pick 1.08"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 8,
+      "start": 11,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Jalen McMillan",
+      "Isaiah Davis"
+    ],
+    "sideB": [
+      "Brandon Aiyuk"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 10,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Josh Allen",
+      "Evan Engram"
+    ],
+    "sideB": [
+      "Caleb Williams",
+      "Jaxon Smith-Njigba",
+      "2025 Pick 3.11"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 12,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2026 Round 1",
+      "2025 Pick 1.08"
+    ],
+    "sideB": [
+      "Dak Prescott"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Bucky Irving",
+      "2025 Pick 2.09",
+      "2025 Pick 5.11"
+    ],
+    "sideB": [
+      "Chris Olave",
+      "2027 Round 3",
+      "2027 Round 4"
+    ],
+    "settings": {
+      "qb": "1QB",
+      "te": "none",
+      "teams": 12,
+      "start": 9,
+      "passTD": 4.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Jordan Love",
+      "Chris Godwin",
+      "2025 Pick 1.01",
+      "2025 Pick 3.01"
+    ],
+    "sideB": [
+      "Jayden Daniels",
+      "Breece Hall",
+      "Rashod Bateman",
+      "2025 Pick 2.09"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 9,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2025 Pick 1.08"
+    ],
+    "sideB": [
+      "2026 Round 2",
+      "2025 Pick 2.04"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 10,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Geno Smith"
+    ],
+    "sideB": [
+      "Blake Corum"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 10,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2025 Pick 3.03"
+    ],
+    "sideB": [
+      "Jaleel McLaughlin",
+      "2025 Pick 3.12"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Khalil Shakir",
+      "Keon Coleman"
+    ],
+    "sideB": [
+      "D.J. Moore",
+      "DeAndre Hopkins"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 10,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Kyle Pitts"
+    ],
+    "sideB": [
+      "Jonathon Brooks",
+      "2025 Pick 2.06"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 10,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2025 Pick 2.03"
+    ],
+    "sideB": [
+      "2026 Round 3",
+      "2025 Pick 3.10",
+      "2025 Pick 3.11",
+      "2025 Pick 2.07"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 11,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "De'Von Achane",
+      "2025 Pick 1.11",
+      "2025 Pick 2.03"
+    ],
+    "sideB": [
+      "Rhamondre Stevenson",
+      "Calvin Ridley",
+      "2025 Pick 1.01",
+      "2025 Pick 3.01"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 10,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2026 Round 1",
+      "2025 Pick 1.09",
+      "2025 Pick 1.11",
+      "2025 Pick 2.11",
+      "2025 Pick 3.11"
+    ],
+    "sideB": [
+      "Lamar Jackson",
+      "2027 Round 4",
+      "Jaheim Bell"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE+",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 0.5
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "2026 Round 3",
+      "2025 Pick 3.09"
+    ],
+    "sideB": [
+      "Mark Andrews"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "none",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Joe Mixon",
+      "Wan'Dale Robinson"
+    ],
+    "sideB": [
+      "Jonathan Taylor",
+      "Tony Pollard"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 6,
+      "start": 14,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Troy Franklin",
+      "Calvin Austin III",
+      "Tyler Conklin",
+      "2025 Pick 1.01"
+    ],
+    "sideB": [
+      "De'Von Achane",
+      "Tucker Kraft",
+      "2025 Pick 2.03"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 12,
+      "start": 10,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Darnell Mooney",
+      "2026 Round 3",
+      "Jaleel McLaughlin",
+      "Austin Ekeler",
+      "2025 Pick 3.04"
+    ],
+    "sideB": [
+      "Braelon Allen",
+      "Rachaad White",
+      "2025 Pick 2.05"
+    ],
+    "settings": {
+      "qb": "1QB",
+      "te": "TE+",
+      "teams": 12,
+      "start": 9,
+      "passTD": 4.0,
+      "ppr": 1.0
+    }
+  },
+  {
+    "date": "Today",
+    "sideA": [
+      "Kenneth Walker III",
+      "Chase Brown",
+      "Jauan Jennings"
+    ],
+    "sideB": [
+      "Tee Higgins",
+      "Travis Etienne",
+      "2025 Pick 1.06"
+    ],
+    "settings": {
+      "qb": "SF",
+      "te": "TE++",
+      "teams": 6,
+      "start": 14,
+      "passTD": 6.0,
+      "ppr": 1.0
+    }
+  }
+]
