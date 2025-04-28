@@ -47,4 +47,10 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 
+# Local tooling / SDKs
 google-cloud-sdk/
+
+# Sensitive / local-only files
+*.zip
+scraper/firebase-key.json
+mobile/ios/GoogleService-Info.plist
