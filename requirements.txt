@@ -1,0 +1,12 @@
+# Core scraping & parsing
+selenium==4.18.1
+beautifulsoup4==4.12.3
+webdriver-manager==4.0.1
+
+# GCS Uploads
+google-cloud-storage==2.14.0
+
+# Optional: logging, retry logic, or scheduling support
+loguru==0.7.2           # super slick logging
+tenacity==8.2.3         # retry failed scrapes gracefully
+python-dotenv==1.0.1    # for environment-based config (like bucket name)

@@ -2,6 +2,7 @@
 node_modules/
 .expo/
 .expo-shared/
+.expo-cache/
 
 # iOS / Android build artifacts
 android/
@@ -12,6 +13,9 @@ build/
 *.apk
 *.aar
 *.keystore
+*.xcworkspace/
+Pods/
+local.properties
 
 # macOS system files
 .DS_Store
@@ -29,9 +33,18 @@ __pycache__/
 
 # GCP service account key
 .gcs/
+.gcs-creds.json
 
 # Temp scraped data
 temp_data/
 
 # VSCode settings (optional)
 .vscode/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+google-cloud-sdk/
