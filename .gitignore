@@ -49,6 +49,7 @@ yarn-error.log*
 
 # Local tooling / SDKs
 google-cloud-sdk/
+google-cloud-sdk-*.tar.gz
 
 # Sensitive / local-only files
 *.zip
