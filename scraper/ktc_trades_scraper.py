@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
-import time, re, os, datetime
+import time, re, os, json, hashlib
 import glob
 
 # ✅ Docker-compatible Chrome binary path
@@ -11,10 +11,18 @@ os.environ["WDM_BROWSER_PATH"] = "/usr/bin/google-chrome"
 # ✅ Headless Chrome for Docker
 options = webdriver.ChromeOptions()
 options.binary_location = "/usr/bin/google-chrome"
-options.add_argument("--headless")
+options.add_argument("--headless=new")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 
+def generate_trade_hash(trade):
+    normalized = {
+        "sideA": sorted(trade["sideA"]),
+        "sideB": sorted(trade["sideB"]),
+        "settings": trade["settings"]
+    }
+    as_str = json.dumps(normalized, sort_keys=True)
+    return hashlib.sha256(as_str.encode()).hexdigest()[:10]
 
 def get_trades_data():
     install_base = ChromeDriverManager().install()
@@ -49,11 +57,9 @@ def get_trades_data():
             side_a_div = card.select_one(".tdb-wrap-tm-1")
             side_b_div = card.select_one(".tdb-wrap-tm-2")
             settings_div = card.select_one(".tdb-wrap-settings")
-            date_div = card.select_one(".tdb-wrap-date")
 
             side_a = [el.get_text(strip=True) for el in side_a_div.select("a, p")]
             side_b = [el.get_text(strip=True) for el in side_b_div.select("a, p")]
-            date_text = date_div.get_text(strip=True) if date_div else str(datetime.date.today())
 
             settings = {
                 "qb": "1QB",
@@ -92,12 +98,12 @@ def get_trades_data():
                         settings["ppr"] = "Tiered"
 
             trade = {
-                "date": date_text,
                 "sideA": side_a,
                 "sideB": side_b,
-                "settings": settings
+                "settings": settings,
+                "isUserSubmission": False,
             }
-
+            trade["id"] = generate_trade_hash(trade)
             trades.append(trade)
 
         except Exception as e:

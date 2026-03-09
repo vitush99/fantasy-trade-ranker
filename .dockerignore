@@ -1,5 +1,4 @@
 # 🌐 Sensitive config
-#gcs-creds.json
 .env
 
 # 🐍 Python

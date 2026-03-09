@@ -1,0 +1,15 @@
+# Core scraping & parsing
+selenium==4.18.1
+beautifulsoup4==4.12.3
+webdriver-manager==4.0.1
+
+# Firebase + Firestore
+firebase-admin==6.7.0
+
+# GCS (only needed if you still use it for rankings or backups)
+google-cloud-storage==2.14.0
+
+# Optional: logging, retry logic, or scheduling support
+loguru==0.7.2
+tenacity==8.2.3
+python-dotenv==1.0.1

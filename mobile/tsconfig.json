@@ -1,20 +1,33 @@
+// tsconfig.json
 {
   "compilerOptions": {
     "strict": true,
     "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types"],
     "paths": {
       "@/*": ["app/*"],
       "@screen/*": ["app/screen/*"],
+      "@tabs/*": ["app/(tabs)/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@constants/*": ["constants/*"],
       "@hooks/*": ["hooks/*"],
-      "@engine": ["ranking_engine.ts"]
+      "@images/*": ["assets/images/*"],
+      "@auth/*": ["auth/*"],
+      "@data/*": ["app/data/*"],
+      "@engine": ["ranking_engine.ts"],
+      "@myfirebase": ["firebase/index"],
+      "@myfirebase/*": ["firebase/*"],
+      "@myfirebaseConfig": ["firebaseConfig.ts"],
+      "@utils/*": ["utils/*"],
+      "@appTypes/*": ["types/*"],
+      "@firebase/auth": ["./node_modules/@firebase/auth/dist/index.rn.d.ts"]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    "types/**/*.ts",      // keep .ts here (not just .d.ts)
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ]

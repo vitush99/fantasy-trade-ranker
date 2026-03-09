@@ -30,14 +30,13 @@ WORKDIR /app
 # Copy source code
 COPY . .
 
-# ✅ Add credentials file to container image
-COPY gcs-creds.json /app/gcs-creds.json
-
-# ✅ Set env var inside container (Cloud Run needs this)
-ENV GOOGLE_APPLICATION_CREDENTIALS=/app/gcs-creds.json
+# ✅ Add credentials and auth env for Firebase Admin
+COPY firebase-key.json /app/firebase-key.json
+ENV GOOGLE_APPLICATION_CREDENTIALS=/app/firebase-key.json
 
 # Install Python deps
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Run scraper
-CMD ["python", "scraper/scrape_and_upload.py"]
+CMD ["python", "scrape_and_upload.py"]
+

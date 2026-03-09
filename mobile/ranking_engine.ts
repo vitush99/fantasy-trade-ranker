@@ -1,3 +1,5 @@
+import type { Timestamp } from 'firebase/firestore';
+
 export type Player = {
     name: string;
     position: string;
@@ -6,6 +8,7 @@ export type Player = {
     rank: number;
     age?: number;
     adjustedValue?: number;
+    headshotUrl?: string;
   };
   
   type Swipe = {
@@ -14,7 +17,7 @@ export type Player = {
   };
 
   export type StoredSwipe = Swipe & {
-    timestamp: string;
+    timestamp: Timestamp | string;
   };
   
   const K_FACTOR = 40;
@@ -75,7 +78,11 @@ export type Player = {
   
       const expectedWinner = 1 / (1 + Math.pow(10, (loserAdj - winnerAdj) / 400));
       const baseDelta = K_FACTOR * (1 - expectedWinner);
-      const decayWeight = getDecayWeight(swipe.timestamp);
+      const decayWeight = getDecayWeight(
+        typeof swipe.timestamp === 'string'
+          ? swipe.timestamp
+          : swipe.timestamp.toDate().toISOString()
+      );
       const weightedDelta = baseDelta * decayWeight;
   
       const update = (side: string[], isWinner: boolean) => {
