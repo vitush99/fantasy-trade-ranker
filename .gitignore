@@ -52,6 +52,7 @@ scraper/firebase-key.json
 mobile/ios/GoogleService-Info.plist
 *.service-account.json
 *.json.key
+gcs-creds.json
 
 # Temp scraped data
 temp_data/
