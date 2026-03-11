@@ -4,6 +4,10 @@ node_modules/
 .expo-shared/
 .expo-cache/
 
+# Expo builds
+dist/
+web-build/
+
 # iOS / Android build artifacts
 android/
 ios/
@@ -24,21 +28,35 @@ local.properties
 .env
 .env.*
 
-# Python virtual environment
+# Python environments
 venv/
+.venv/
+env/
+ENV/
 
-# Pycache
+# Python cache
 __pycache__/
 *.py[cod]
+
+# Python build artifacts
+*.egg-info/
+dist/
+build/
 
 # GCP service account key
 .gcs/
 .gcs-creds.json
 
+# Sensitive / local-only files
+scraper/firebase-key.json
+mobile/ios/GoogleService-Info.plist
+*.service-account.json
+*.json.key
+
 # Temp scraped data
 temp_data/
 
-# VSCode settings (optional)
+# VSCode settings
 .vscode/
 
 # Log files
@@ -47,11 +65,28 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 
+# Archives / backups
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
 # Local tooling / SDKs
 google-cloud-sdk/
 google-cloud-sdk-*.tar.gz
 
-# Sensitive / local-only files
-*.zip
-scraper/firebase-key.json
-mobile/ios/GoogleService-Info.plist
+# Browser drivers
+chromedriver
+chromedriver*
+geckodriver
+
+# Data outputs
+*.csv
+*.parquet
+*.sqlite
+*.db
+
+# Typescript
+*.tsbuildinfo
